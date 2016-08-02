@@ -1,0 +1,2 @@
+<Listener className="com.gemstone.gemfire.modules.session.catalina.PeerToPeerCacheLifecycleListener"/>
+</server>
