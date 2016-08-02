@@ -55,10 +55,10 @@ Vagrant.configure("2") do |config|
   #   vb.gui = true
   #
   #   # Customize the amount of memory on the VM:
-  #   vb.memory = 2048
+  #   vb.memory = 8192
   # end
   config.vm.provider :virtualbox do |vb|
-    vb.customize ["modifyvm", :id, "--memory", "2048"]
+    vb.customize ["modifyvm", :id, "--memory", "8192"]
   end
   #
   # View the documentation for the provider you are using for more
