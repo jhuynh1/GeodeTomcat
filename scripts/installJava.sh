@@ -9,3 +9,4 @@ echo "export JAVA_HOME=/usr/bin/java" >> //home/vagrant/.bashrc
 #sudo add-apt-repository ppa:webupd8team/java
 #sudo apt-get update
 #sudo apt-get install -y oracle-java8-installer
+#echo "export JAVA_HOME=/usr/lib/jvm/java-8-oracle/" >> //home/vagrant/.bashrc
