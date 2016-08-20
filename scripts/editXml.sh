@@ -1,7 +1,7 @@
-TOMCAT_LOCATION=/opt/tomcat
+CATALINA_HOME=${CATALINA_HOME:-/opt/tomcat}
 
 #modify context.xml and server.xml
-cd $TOMCAT_LOCATION/conf
+cd $CATALINA_HOME/conf
 
 sed -e "/<[/]Server>/d" server.xml > newServer.xml
 mv server.xml original_server.xml

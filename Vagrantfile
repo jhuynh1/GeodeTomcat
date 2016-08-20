@@ -13,6 +13,7 @@ Vagrant.configure("2") do |config|
   # Every Vagrant development environment requires a box. You can search for
   # boxes at https://atlas.hashicorp.com/search.
   config.vm.box = "ubuntu/trusty64"
+  config.vm.provision :shell, inline: "sudo apt-get update"
   config.vm.provision :shell, path: "scripts/installUnzip.sh"
   config.vm.provision :shell, path: "scripts/installTomcat.sh"
   config.vm.provision :shell, path: "scripts/editXml.sh"
